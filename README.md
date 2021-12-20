@@ -7,7 +7,7 @@
 
 ### 1. Way
 
-In MSSQL, you can open a new query console from the master and create the script execution database in the script.sql file. In the TranslatorApp.API project, you can correct the connection string in 'appsettings.json' and run the project.
+In MSSQL, you can open a new query console from the master and create the script execution database in the script.sql file. In the TranslatorApp.API project, fix the connection string in 'appsettings.json' and run the project.
 
 ### 2. Way
 
