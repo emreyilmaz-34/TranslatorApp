@@ -16,6 +16,6 @@ Fix the connection string in 'appsettings.json' in TranslatorApp.API project.
 Open the 'Package Manager Console' via Visual Studio (on the TranslatorApp.Data project) and run the commands below, respectively (migration);
 
 ```
-add-migration
+add-migration Initial
 update-database
 ```
