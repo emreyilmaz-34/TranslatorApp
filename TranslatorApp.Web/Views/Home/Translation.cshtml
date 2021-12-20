@@ -1,0 +1,28 @@
+﻿@model TranslationWithLanguageDto
+
+@{
+    ViewData["Title"] = "Translation";
+}
+
+<h1>Translations</h1>
+
+@*<a class="btn btn-primary m-1" asp-action="Create">Add Language</a>*@
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Text</th>
+            <th>Translated</th>
+            <th>Language</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Text</td>
+                <td>@Model.Translated</td>
+                <td>@Model.Language.Name</td>
+            </tr>
+    </tbody>
+</table>

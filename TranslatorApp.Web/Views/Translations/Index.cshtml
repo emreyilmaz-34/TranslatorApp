@@ -1,0 +1,35 @@
+﻿@model IEnumerable<TranslationWithLanguageDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Translations</h1>
+
+@*<a class="btn btn-primary m-1" asp-action="Create">Add Language</a>*@
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Text</th>
+            <th>Translated</th>
+            <th>Language</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Text</td>
+                <td>@item.Translated</td>
+                <td>@item.Language.Name</td>
+                <td>
+                    @*<a asp-action="Update" asp-route-id="@item.Id">Update</a>*@
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
